@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Homeinstyleweb</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  </head>
+
+  <body>
+    <div id="menu" class="menu-modal">
+      <div class="menu">
+        <button class="menu-cross" onClick="closeMenu()">
+          <i class="fa fa-times"></i>
+        </button>
+        <img src="resources/logo-dexandra.png" />
+        <div>
+          <div class="vertical-line"></div>
+          <a href="index.html">Photo Gallery</a>
+          <a href="video.html">Video</a>
+          <a href="register.html">Application Form</a>
+          <div class="vertical-line"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="home" class="home-grid">
+      <video autoplay loop>
+        <!-- PUT VIDEO HERE -->
+        <source src="resources/video_1.mp4" type="video/mp4" />
+      </video>
+      <div class="home-title">
+        <button onClick="openMenu()" class="menu-bar">
+          <i class="fa fa-bars"></i>
+        </button>
+        <img src="resources/logo-dexandra.png" />
+      </div>
+      <div class="home-intro">
+        <h1>BEING HOME IN STYLE</h1>
+        <a href="video.html">Watch Video</a>
+        <button disabled>Share</button>
+      </div>
+      <div class="home-info">
+        <p>Scroll down to photo gallery</p>
+        <div>
+          <a href="https://dexandra.com" target="_blank">dexandra.com</a>
+          <a href="">Privacy</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="gallery" class="gallery-grid">
+      <div class="home-title">
+        <img src="resources/logo-dexandra.png" />
+      </div>
+      <div class="gallery-row">
+        <div class="gallery-column">
+          <!-- <img
+            onClick="openPhoto(event, this)"
+            data-title="Sandra & Yana"
+            data-year="2019"
+            data-detail="We enjoy the scent, the moment, and the smile that hang on our face."
+            src="resources/photo_1.jpg"
+          /> -->
+          <!-- <img onClick="openPhoto(event)" src="resources/photo_4.jpg" /> -->
+          <!--
+				<img onClick="openPhoto(event)" src="resources/photo_3.jpg" />
+				<img onClick="openPhoto(event)" src="resources/photo_4.ajpg" />
+-->
+        </div>
+        <div class="gallery-column">
+          <!-- <img onClick="openPhoto(event)" src="resources/photo_2.jpg" />
+          <img onClick="openPhoto(event)" src="resources/photo_6.jpg" /> -->
+          <!--
+				<img onClick="openPhoto(event)" src="resources/photo_2.jpg" />
+				<img onClick="openPhoto(event)" src="resources/photo_2.jpg" />
+-->
+        </div>
+        <div class="gallery-column">
+          <!-- <img
+            onClick="openPhoto(event, this)"
+            data-title="De'xandra, For Him, For Her"
+            data-year="2020"
+            data-detail="De'xandra perfumes provide you the scent of uniqueness on your own."
+            src="resources/photo_5.jpg"
+          /> -->
+          <!-- <img onClick="openPhoto(event)" src="resources/photo_7.jpg" /> -->
+          <!--
+				<img onClick="openPhoto(event)" src="resources/photo_7.jpg" />
+				<img onClick="openPhoto(event)" src="resources/photo_2.jpg" />
+-->
+        </div>
+        <div class="gallery-column">
+          <!-- <img onClick="openPhoto(event)" src="resources/photo_3.jpg" /> -->
+          <!--
+				<img onClick="openPhoto(event)" src="resources/photo_8.jpg" />
+				<img onClick="openPhoto(event)" src="resources/photo_6.jpg" />
+				<img onClick="openPhoto(event)" src="resources/photo_1.jpg" />
+-->
+        </div>
+      </div>
+    </div>
+
+    <div id="photoModal" class="photo-modal">
+      <button class="cross" onClick="closePhoto()">
+        <i class="fa fa-times"></i>
+      </button>
+      <div class="photo-grid">
+        <div class="photo-profile">
+          <img id="photoImage" />
+          <p id="photoTitle"></p>
+          <p id="photoYear"></p>
+        </div>
+
+        <div class="photo-comment">
+          <p id="photoDetail"></p>
+          <a href="register.html">Join Now</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="javascript/main.js"></script>
+  </body>
+</html>

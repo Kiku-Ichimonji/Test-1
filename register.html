@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Homeinstyleweb</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/register.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+	
+	<div id="menu" class="menu-modal">
+		<div class="menu">
+			<button class="menu-cross" onClick="closeMenu()"><i class="fa fa-times"></i></button>
+			<img src="resources/logo-dexandra.png" />
+			<div>
+				<div class="vertical-line"></div>
+				<a href="index.html">Photo Gallery</a>
+				<a href="video.html">Video</a>
+				<a href="register.html">Application Form</a>
+				<div class="vertical-line"></div>
+			</div>
+		</div>
+	</div>
+	
+	<button onClick="openMenu()" class="menu-bar"><i class="fa fa-bars"></i></button>
+	
+	<div class="register-grid">
+		
+		<div class="form-grid">
+			<div>
+				<p class="form-title">Benefit</p>
+				<hr />
+			</div>
+			<div>
+				<p class="form-detail">Who said housewife can't be fancy and stylist??</p>
+			</div>
+			<p>Interested? Fill in the form now and we will contact you very soon.</p>
+		</div>
+		
+		<div class="input-grid">
+			<input type="text" class="name" placeholder="Name" />
+			<div>
+				<input type="text" class="date-of-birth" placeholder="Date of Birth" />
+				<input type="tel" class="mobile" placeholder="Mobile No." />
+			</div>
+			<textarea class="address" placeholder="Address"></textarea>
+			<input type="email" class="email" placeholder="Email Address" />
+			<div class="terms-and-conditions">
+				<input type="checkbox" />
+				<p>I have understand and agree to the <a href="#">Terms and Conditions</a> of DeXandra before sending this form.</p>
+			</div>
+			<button type="submit">Send</button>
+		</div>
+		
+	</div>
+	
+	<script src="javascript/main.js"></script>
+	
+</body>
+</html>

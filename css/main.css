@@ -1,0 +1,112 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=DM+Sans);
+/* CSS Document */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+input {
+  outline: none;
+}
+
+button,
+a {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  text-decoration: none;
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  outline: none;
+}
+
+p {
+  color: #649582;
+  font-size: 1em;
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+}
+
+.menu-bar {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+}
+
+.menu-bar i {
+  font-size: 2em;
+}
+
+.cross {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+}
+
+.cross i {
+  font-size: 3em;
+}
+
+div[class*="grid"]:not(.input-grid) {
+  display: grid;
+  background-color: #f4f0e4;
+  place-items: center;
+  text-align: center;
+}
+
+.menu-modal {
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  transform: translateX(-100%);
+  top: 0;
+  transition: 1s;
+}
+
+.menu {
+  background-color: #f4f0e4;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.menu img {
+  margin-top: 30px;
+  width: 10%;
+  margin-left: -18px;
+}
+
+.menu div {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 200px;
+  margin-top: 20px;
+}
+
+.menu div a {
+  font-size: 1.2em;
+  margin: 10px 0 10px 0;
+  color: #649582;
+}
+
+.menu div .vertical-line {
+  border-left: 4px solid #193546;
+  height: 300px;
+  margin-left: 55px;
+}
+
+.menu .menu-cross {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+}
+
+.menu .menu-cross i {
+  font-size: 3em;
+}

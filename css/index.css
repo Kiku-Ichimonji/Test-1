@@ -1,0 +1,166 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+html {
+	scroll-behavior: smooth;
+}
+*/
+
+/** grid **/
+.home-grid {
+  grid-template-rows: 20vh 60vh 20vh;
+  height: 100vh;
+}
+
+.home-grid video {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  object-fit: cover;
+  /* filter: blur(5px); */
+  /* filter: grayscale(100%); */
+  /* filter: sepia(100%); */
+  /* opacity: 0.8; */
+}
+
+/** home-title **/
+.home-title {
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.home-title img {
+  width: 20%;
+  margin-top: 30px;
+}
+
+/** home-intro **/
+.home-intro {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  width: 100%;
+  grid-template-rows: 45% 25% 30%;
+  position: relative;
+  z-index: 1;
+}
+
+.home-intro h1 {
+  font-family: "Arial", "Adagio Sans", "Calibri";
+  font-size: 3em;
+  color: #e9c67b;
+  align-self: flex-end;
+}
+
+/** Watch Video **/
+.home-intro a {
+  color: #649582;
+  border: 1px solid grey;
+  padding: 10px 50px 10px 50px;
+  margin-top: -30px;
+}
+
+.home-intro a:active {
+  color: #476b5d;
+}
+
+/** Share **/
+.home-intro button {
+  width: 20%;
+  color: #e1b49a;
+  letter-spacing: 0.05em;
+  align-self: flex-start;
+}
+
+.home-intro button:active {
+  color: #d08a62;
+}
+
+.home-info {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  width: 100%;
+  grid-template-rows: 80% 20%;
+  position: relative;
+  z-index: 1;
+}
+
+.home-info p {
+  animation: color_change 0.6s infinite alternate;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home-info div a {
+  padding: 0 10px;
+  color: #e1b49a;
+}
+
+.home-info div a:active {
+  color: #d08a62;
+}
+
+@keyframes color_change {
+  from {
+    background-color: #649582;
+  }
+  to {
+    background-color: #f4f0e4;
+  }
+}
+
+.photo-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+.photo-grid {
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+.photo-profile {
+  margin-left: 200px;
+}
+
+.photo-profile img {
+  max-width: 70%;
+}
+
+.photo-profile p {
+  color: #193546;
+  font-size: 1.5em;
+}
+
+.photo-profile #photoTitle {
+  font-size: 2em;
+}
+
+.photo-comment {
+  width: 50%;
+  display: grid;
+  place-items: center;
+  height: 70%;
+  margin-right: 300px;
+}
+
+.photo-comment p {
+  font-size: 2.8em;
+  align-self: center;
+  color: #193546;
+}
+
+.photo-comment a {
+  background-color: #193546;
+  color: #e9c67b;
+  padding: 10px 30px;
+  font-size: 1.4em;
+  width: 40%;
+}

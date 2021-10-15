@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+
+.gallery-grid {
+	min-height: 100vh;
+	grid-template-rows: 12vh 1fr;
+}
+
+.gallery-row {
+	display: flex;
+	justify-content: center;
+}
+
+.gallery-column {
+	flex: 25%;
+	max-width: 15%;
+	padding: 0 4px;
+}
+
+.gallery-column img {
+	width: 100%;
+	border-radius: 5%;
+	padding: 4px 4px;
+	cursor: pointer;
+}
+
+.gallery-column img:hover {
+	transform: scale(1.2);
+	transition: ease-in-out .5s transform;
+}
